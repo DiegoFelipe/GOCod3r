@@ -16,20 +16,20 @@ func main() {
 
 	fmt.Println(aprovados)
 
-	// key, value
 	/**
-		Diego (CPF: 732676734)
-		Felipe (CPF: 8732472347823478)
-		Souza (CPF: 570734753948)
+	Diego (CPF: 732676734)
+	Felipe (CPF: 8732472347823478)
+	Souza (CPF: 570734753948)
 	*/
+	// key, value
 	for cpf, nome := range aprovados {
-		fmt.Printf("%s (CPF: %d)\n", nome,cpf)
+		fmt.Printf("%s (CPF: %d)\n", nome, cpf)
 	}
 
 	// acessar um especifico
 	fmt.Println(aprovados[8732472347823478]) // Felipe
 
 	// para deletar
-	delete(aprovados,8732472347823478)
+	delete(aprovados, 8732472347823478)
 	fmt.Println(aprovados)
 }
